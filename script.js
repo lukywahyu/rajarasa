@@ -36,19 +36,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Fungsi untuk menampilkan resep
+// Fungsi untuk menampilkan varian rasa / kategori camilan
     function renderRecipes() {
         const recipeList = document.querySelector('.recipe-list');
         recipes.forEach((recipe, index) => {
             const recipeItem = document.createElement('div');
             recipeItem.className = 'recipe-item';
             recipeItem.setAttribute('data-aos', 'fade-up');
-            recipeItem.setAttribute('data-aos-delay', index * 100); // Tambahkan delay untuk efek
+            recipeItem.setAttribute('data-aos-delay', index * 100);
             
             recipeItem.innerHTML = `
                 <img src="${recipe.image}" alt="${recipe.name}" loading="lazy">
                 <h3>${recipe.name}</h3>
                 <p>${recipe.description}</p>
-                <a href="${recipe.link}" class="btn-recipe">Lihat Resep</a>
+                <a href="${recipe.link}" class="btn-recipe" target="_blank">Pilih Varian</a>
             `;
             recipeList.appendChild(recipeItem);
         });

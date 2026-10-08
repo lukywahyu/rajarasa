@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #adf22c; /* Warna hijau utama yang baru */
-    --secondary-color: #c0f47e; /* Warna hijau sekunder yang disesuaikan */
-    --accent-color: #FFC107; /* Warna aksen kuning */
+    --primary-color: #ff6f3c; /* Diubah menjadi warna oranye hangat khas camilan gurih/renyah */
+    --secondary-color: #ff9a3c; /* Warna sekunder yang senada */
+    --accent-color: #FFC107; /* Warna aksen kuning tetap dipertahankan */
     --text-color: #333;
     --text-light: #fff;
-    --background-light: #f4fcf4;
-    --card-bg-light: #f9fbe7;
+    --background-light: #fffaf8; /* Nuansa background sedikit hangat */
+    --card-bg-light: #fff5f0;
     --shadow-light: rgba(0, 0, 0, 0.1);
     --shadow-dark: rgba(0, 0, 0, 0.25);
 
@@ -58,7 +58,7 @@ body.dark-mode .btn-buy, body.dark-mode .btn-recipe {
     color: var(--text-light);
 }
 body.dark-mode .btn-buy:hover, body.dark-mode .btn-recipe:hover {
-    background-color: #388e3c;
+    background-color: #e85a2b;
 }
 body.dark-mode .info-text a {
     color: var(--text-color);
@@ -123,7 +123,7 @@ body.dark-mode .info-text a {
 
 /* Header (Hero Section) */
 .header {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://res.cloudinary.com/dhcydygfx/image/upload/v1755740209/hero-bg_brrhdk.png') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/dhcydygfx/image/upload/v1791387898/background_sqcmqj.jpg') no-repeat center center/cover;
     color: var(--text-light);
     text-align: center;
     padding: 8rem 0;
@@ -241,7 +241,7 @@ h2::after {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .filter-btn:hover {
-    background-color: #66bb6a;
+    background-color: #e8852b;
 }
 .filter-btn.active {
     background-color: var(--primary-color);
@@ -286,7 +286,7 @@ h2::after {
 }
 
 .product-info h3 {
-    color: #2e7d32;
+    color: #d35400;
     margin-top: 0;
     margin-bottom: 5px;
 }
@@ -320,7 +320,7 @@ h2::after {
 }
 
 .btn-buy:hover, .btn-recipe:hover {
-    background-color: #388e3c;
+    background-color: #e85a2b;
     transform: scale(1.05);
 }
 
@@ -361,7 +361,7 @@ h2::after {
 
 /* Testimoni */
 .testimonials {
-    background-color: #e8f5e9;
+    background-color: #fff8f5;
 }
 .testimonial-list {
     display: grid;
@@ -559,7 +559,7 @@ h2::after {
 }
 
 .modal-title {
-    color: #4CAF50;
+    color: #ff6f3c;
     font-weight: bold;
     font-size: 1.5rem;
 }
@@ -577,7 +577,7 @@ h2::after {
 }
 
 #continue-btn {
-    background-color: #4CAF50;
+    background-color: #ff6f3c;
     color: #fff;
     border: none;
     padding: 0.8rem 1.5rem;
@@ -588,7 +588,7 @@ h2::after {
 }
 
 #continue-btn:hover {
-    background-color: #45a049;
+    background-color: #e85a2b;
 }
 
 #cancel-btn {
@@ -648,13 +648,12 @@ h2::after {
     .products, .advantages, .social-media {
         padding: 2rem 0;
     }
-    /* Mengatur ukuran gambar produk agar konsisten 1:1 */
-.product-item img {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    object-position: center;
-}
+    .product-item img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: center;
+    }
     .whatsapp-float {
         width: 50px;
         height: 50px;
